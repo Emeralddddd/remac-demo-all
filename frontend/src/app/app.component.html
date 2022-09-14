@@ -1,0 +1,25 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar"
+            nzWidth="200px"
+            nzBreakpoint="md"
+            [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <a href="" target="_blank">
+        <h1 style="font-size: 24px">Remac</h1>
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed" style="font-size: 24px">
+          <li nz-menu-item nzMatchRouter style="height:80px">
+            <a routerLink="/automatic">Automatic <br>
+              Elimination</a>
+          </li>
+          <li nz-menu-item nzMatchRouter style="height:80px">
+            <a routerLink="/adaptive">Adaptive <br>
+              Elimination</a>
+          </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <router-outlet></router-outlet>
+  </nz-layout>
+</nz-layout>
